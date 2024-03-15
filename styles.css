@@ -1,0 +1,168 @@
+/* убирает голубое выделение при клике на интерактивные элементы */
+html {
+    -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+}
+
+@media screen and (max-width: 767px) {
+    .portfolio-slider .swiper-slide .slide-content {
+        transform: translateY(8rem);
+        transition: transform 0.3s ease;
+    }
+
+    .portfolio-slider .swiper-slide .slide-price,
+    .portfolio-slider .swiper-slide .slide-items,
+    .portfolio-slider .swiper-slide .slide-gradient {
+        transition: opacity 0.3s ease;
+        opacity: 0;
+    }
+
+    .portfolio-slider .swiper-slide:hover .slide-price,
+    .portfolio-slider .swiper-slide:hover .slide-items,
+    .portfolio-slider .swiper-slide:hover .slide-gradient {
+        opacity: 100;
+    }
+
+    .portfolio-slider .swiper-slide:hover .slide-content {
+        transform: translateY(0rem);
+    }
+
+    /* */
+
+    .service-item .slide-content {
+        transform: translateY(8rem);
+        transition: transform 0.3s ease;
+    }
+
+    .service-item .slide-items,
+    .service-item .slide-gradient {
+        transition: opacity 0.3s ease;
+        opacity: 0;
+    }
+
+    .service-item:hover .slide-items,
+    .service-item:hover .slide-gradient {
+        opacity: 100;
+    }
+
+    .service-item:hover .slide-content {
+        transform: translateY(0rem);
+    }
+}
+
+
+.slider-arrow,
+.select-img,
+select,
+.slide-text-wrapper,
+.tab-arrow,
+.slide-num,
+.slide-heading,
+.swiper-slide,
+.slide-content,
+.slide-items,
+.service-item,
+.slide-text-wrapper-old {
+    user-select: none !important;
+}
+
+.active {
+    pointer-events: all;
+}
+
+.iti {
+    width: 100%;
+}
+
+select {
+    appearance: none !important;
+    -webkit-appearance: none !important;
+    -moz-appearance: none !important;
+}
+
+.quiz-progress-inner {
+    animation: loadingBg 15s infinite linear;
+}
+
+.contacts-online-live {
+    animation: online 2s infinite;
+}
+
+@-webkit-keyframes loadingBg {
+    0% {
+        background-position: 0%
+    }
+
+    100% {
+        background-position: 100%
+    }
+}
+
+@keyframes loadingBg {
+    0% {
+        background-position: 0%
+    }
+
+    100% {
+        background-position: 100%
+    }
+}
+
+@-webkit-keyframes online {
+    0% {
+        opacity: 1
+    }
+
+    50% {
+        opacity: 0
+    }
+
+    100% {
+        opacity: 1
+    }
+}
+
+@keyframes online {
+    0% {
+        opacity: 1
+    }
+
+    50% {
+        opacity: 0
+    }
+
+    100% {
+        opacity: 1
+    }
+}
+
+:focus-visible {
+    outline: 0 !important;
+}
+
+.button-blick {
+    animation-duration: 3.5s;
+    animation-iteration-count: infinite;
+    animation-name: slideme;
+    animation-delay: 50ms;
+}
+
+@keyframes slideme {
+    0% {
+        left: -30px;
+        margin-left: 0
+    }
+
+    30% {
+        left: 110%;
+        margin-left: 80px
+    }
+
+    100% {
+        left: 110%;
+        margin-left: 80px
+    }
+}
+
+.quiz-option:hover .quiz-option-radio {
+    background-color: #cbb26a;
+}
