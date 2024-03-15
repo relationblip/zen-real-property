@@ -1,4 +1,3 @@
-/*
 $(document).ready(function () {
     function customScrollTop() {
         var scrollTopPosition = $('.quiz').find('.container').offset().top;
@@ -7,7 +6,7 @@ $(document).ready(function () {
 
     $('[data-form="next-btn"]').on('click', customScrollTop);
     $('[data-form="back-btn"]').on('click', customScrollTop);
-});*/
+});
 
 
 
