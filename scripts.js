@@ -6,15 +6,22 @@ $(document).ready(function () {
 
     $('[data-form="next-btn"]').on('click', customScrollTop);
     $('[data-form="back-btn"]').on('click', customScrollTop);
+
+    $('.quiz-option').on('click', function () {
+        // Проверяем, есть ли радиокнопка внутри текущего элемента quiz-option
+        if ($(this).find('input[type="radio"]').length > 0) {
+            customScrollTop(); // Если есть, вызываем функцию customScrollTop
+        }
+    });
 });
 
 
 
-$(document).ready(function() {
-    $('.modal-object-button').on('click', function() {
+$(document).ready(function () {
+    $('.modal-object-button').on('click', function () {
         // Находим ближайший элемент с классом modal-object-heading
         var heading = $(this).closest('.modal').find('.modal-object-heading').text();
-        
+
         // Записываем текст заголовка в скрытое поле формы
         $('.wait-form #object-input').val(heading);
     });
