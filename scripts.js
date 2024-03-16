@@ -527,26 +527,6 @@ document.addEventListener("DOMContentLoaded", function () {
 
 
 
-// Карта футер
-document.addEventListener("DOMContentLoaded", function () {
-    var iframe = document.createElement("iframe");
-    iframe.src = "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d988.0546089136185!2d98.37820556908503!3d7.872197511879976!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x30502e1f40f8e8d5%3A0xa6cf90230d2e1f9d!2sThe%20Light%20Condo!5e0!3m2!1sru!2sru!4v1705658590527!5m2!1sru!2sru";
-    iframe.width = "100%";
-    iframe.height = "100%";
-    iframe.style.border = "0";
-    iframe.allowfullscreen = false;
-    iframe.loading = "lazy";
-    iframe.referrerpolicy = "no-referrer-when-downgrade";
-
-    // Находим элемент с классом .map
-    var mapElement = document.querySelector(".map");
-
-    // Вставляем iframe внутрь элемента .map
-    mapElement.appendChild(iframe);
-});
-
-
-
 // Закрытие модальных окон по пустому месту 
 document.addEventListener('DOMContentLoaded', function () {
     // Получаем все элементы с классом modal-overlay
