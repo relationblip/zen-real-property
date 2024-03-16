@@ -7,10 +7,6 @@ html {
     transform: rotate(180deg);
 }
 
-.tab-button:hover .tab-arrow {
-    transform: rotate(180deg);
-}
-
 
 @media screen and (max-width: 767px) {
     .portfolio-slider .swiper-slide .slide-content {
