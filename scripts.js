@@ -1,16 +1,15 @@
 $(document).ready(function () {
     function customScrollTop() {
         var scrollTopPosition = $('.quiz').find('.container').offset().top;
-        $('html, body').animate({ scrollTop: scrollTopPosition }, 500); // Прокручиваем страницу к началу .quiz-inner
+        $('html, body').animate({ scrollTop: scrollTopPosition }, 500);
     }
 
     $('[data-form="next-btn"]').on('click', customScrollTop);
     $('[data-form="back-btn"]').on('click', customScrollTop);
 
     $('.quiz-option').on('click', function () {
-        // Проверяем, есть ли радиокнопка внутри текущего элемента quiz-option
         if ($(this).find('input[type="radio"]').length > 0) {
-            customScrollTop(); // Если есть, вызываем функцию customScrollTop
+            customScrollTop(); 
         }
     });
 });
@@ -470,7 +469,7 @@ document.addEventListener('DOMContentLoaded', function () {
         const iti = window.intlTelInput(input, {
             initialCountry: "auto",
             geoIpLookup: callback => {
-                fetch("https://ipapi.co/json")
+                fetch("https://ipinfo.io/json")
                     .then(res => res.json())
                     .then(data => callback(data.country_code))
                     .catch(() => callback("us"));
