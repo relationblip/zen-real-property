@@ -3,6 +3,8 @@ html {
     -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
 }
 
+@media (max-width: 767px) { html { font-size: 3.3vw; } }
+
 .tab-button.w--current .tab-arrow {
     transform: rotate(180deg);
 }
