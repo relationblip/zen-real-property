@@ -471,7 +471,7 @@ document.addEventListener('DOMContentLoaded', function () {
             geoIpLookup: callback => {
                 fetch("https://ipinfo.io/json")
                     .then(res => res.json())
-                    .then(data => callback(data.country_code))
+                    .then(data => callback(data.country))
                     .catch(() => callback("us"));
             },
             nationalMode: false,
