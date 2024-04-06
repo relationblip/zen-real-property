@@ -1,3 +1,15 @@
+$(document).ready(function() {
+    window.addEventListener('hashchange', offsetAnchor);
+    window.setTimeout(offsetAnchor, 1);
+    function offsetAnchor() {
+        if (location.hash.length !== 0) {
+            window.scrollTo(window.scrollX, window.scrollY - 50);
+            console.log('скролл сработал');
+        }
+    }
+});
+
+
 $(document).ready(function () {
     function customScrollTop() {
         var scrollTopPosition = $('.quiz').find('.container').offset().top;
