@@ -1,18 +1,3 @@
-$(document).ready(function() {
-    window.addEventListener('hashchange', offsetAnchor);
-    window.setTimeout(offsetAnchor, 1);
-    function offsetAnchor() {
-        window.removeEventListener('hashchange', offsetAnchor);
-        if (location.hash.length !== 0) {
-            window.scrollTo(window.scrollX, window.scrollY - 50);
-            console.log('скролл сработал');
-        }
-        window.addEventListener('hashchange', offsetAnchor);
-    }
-});
-
-
-
 $(document).ready(function () {
     function customScrollTop() {
         var scrollTopPosition = $('.quiz').find('.container').offset().top;
