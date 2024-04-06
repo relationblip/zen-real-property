@@ -1,3 +1,10 @@
+$(window).on('scroll', function() {
+    var headerHeight = $('.nav-fixed').outerHeight();
+    $('body').css('padding-top', headerHeight);
+});
+
+
+
 $(document).ready(function () {
     function customScrollTop() {
         var scrollTopPosition = $('.quiz').find('.container').offset().top;
