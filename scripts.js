@@ -4,14 +4,16 @@ $(document).ready(function () {
         $('html, body').animate({ scrollTop: scrollTopPosition }, 500);
     }
 
-    $('[data-form="next-btn"]').on('click', customScrollTop);
-    $('[data-form="back-btn"]').on('click', customScrollTop);
+    if ($(window).width() < 480) {
+        $('[data-form="next-btn"]').on('click', customScrollTop);
+        $('[data-form="back-btn"]').on('click', customScrollTop);
 
-    $('.quiz-option').on('click', function () {
-        if ($(this).find('input[type="radio"]').length > 0) {
-            customScrollTop(); 
-        }
-    });
+        $('.quiz-option').on('click', function () {
+            if ($(this).find('input[type="radio"]').length > 0) {
+                customScrollTop(); 
+            }
+        });
+    }
 });
 
 
