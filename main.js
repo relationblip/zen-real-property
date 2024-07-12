@@ -46,12 +46,20 @@ $(document).ready(function () {
 
     // скрытие/появление меню по скроллу
     function navFunction() {
+        const url = window.location.pathname;
+        const isApartmentPage = url.startsWith('/apartments/');
+
+        if (isApartmentPage) {
+            return; // Не выполнять функцию, если URL соответствует /apartments/*
+        }
+
         if (window.scrollY > 800 && !isScrolledPastThreshold) {
             nav_fixed.addClass('active');
         } else if (window.scrollY <= 800 && isScrolledPastThreshold) {
             nav_fixed.removeClass('active');
         }
     }
+
 
     // скрытие/появление виджета по скроллу
     function widgetFunction() {
