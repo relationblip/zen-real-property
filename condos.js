@@ -57,6 +57,14 @@ document.addEventListener('DOMContentLoaded', function () {
         slidesPerView: 3,
         loop: false,
         speed: 600,
+        pagination: {
+            el: '#layouts-pagination',
+            type: 'bullets',
+            clickable: true,
+            bulletClass: 'slider-dot',
+            bulletActiveClass: 'active',
+            dynamicBullets: true,
+        },
         autoplay: {
             delay: 3000,
             disableOnInteraction: true,
@@ -100,6 +108,14 @@ document.addEventListener('DOMContentLoaded', function () {
         slidesPerView: 3,
         loop: false,
         speed: 600,
+        pagination: {
+            el: '#plans-pagination',
+            type: 'bullets',
+            clickable: true,
+            bulletClass: 'slider-dot',
+            bulletActiveClass: 'active',
+            dynamicBullets: true,
+        },
         autoplay: {
             delay: 3000,
             disableOnInteraction: true,
@@ -194,6 +210,14 @@ document.addEventListener('DOMContentLoaded', function () {
         spaceBetween: a_spacePixels,
         loop: false,
         speed: 600,
+        pagination: {
+            el: '#also-pagination',
+            type: 'bullets',
+            clickable: true,
+            bulletClass: 'slider-dot',
+            bulletActiveClass: 'active',
+            dynamicBullets: true,
+        },
         autoplay: {
             delay: 3000,
             disableOnInteraction: true,
