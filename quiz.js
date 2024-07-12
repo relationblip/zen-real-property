@@ -1,5 +1,3 @@
-<script src="https://cdn.jsdelivr.net/gh/videsigns/webflow-tools@latest/multi-step.js"></script>
-
 // Фикс для последнего шага в квизе на мобильных устройствах
 $(document).ready(function () {
     if ($(window).width() < 768) {
