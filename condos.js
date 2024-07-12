@@ -55,7 +55,7 @@ document.addEventListener('DOMContentLoaded', function () {
         allowTouchMove: true,
         spaceBetween: l_spacePixels,
         slidesPerView: 3,
-        loop: false,
+        loop: true,
         speed: 600,
         pagination: {
             el: '#layouts-pagination',
@@ -106,7 +106,7 @@ document.addEventListener('DOMContentLoaded', function () {
         allowTouchMove: true,
         spaceBetween: p_spacePixels,
         slidesPerView: 3,
-        loop: false,
+        loop: true,
         speed: 600,
         pagination: {
             el: '#plans-pagination',
@@ -157,7 +157,7 @@ document.addEventListener('DOMContentLoaded', function () {
         allowTouchMove: true,
         slidesPerView: 3,
         spaceBetween: f_spacePixels,
-        loop: false,
+        loop: true,
         pagination: {
             el: '#flats-pagination',
             type: 'bullets',
@@ -208,7 +208,7 @@ document.addEventListener('DOMContentLoaded', function () {
         allowTouchMove: true,
         slidesPerView: 3,
         spaceBetween: a_spacePixels,
-        loop: false,
+        loop: true,
         speed: 600,
         pagination: {
             el: '#also-pagination',
