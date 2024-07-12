@@ -11,12 +11,12 @@ document.addEventListener('DOMContentLoaded', function () {
             disableOnInteraction: true,
         },
         pagination: {
-                el: '#object-pagination',
-                type: 'bullets',
-                clickable: true,
-                bulletClass: 'slider-dot',
-                bulletActiveClass: 'active',
-                dynamicBullets: true,
+            el: '#object-pagination',
+            type: 'bullets',
+            clickable: true,
+            bulletClass: 'slider-dot',
+            bulletActiveClass: 'active',
+            dynamicBullets: true,
         },
         navigation: {
             nextEl: '#object-arrow-next',
@@ -46,9 +46,9 @@ document.addEventListener('DOMContentLoaded', function () {
 // Планировки
 document.addEventListener('DOMContentLoaded', function () {
 
-		const l_spaceVW = 1.8855;
+    const l_spaceVW = 1.8855;
     const l_spacePixels = window.innerWidth * (l_spaceVW / 100);
-    
+
     var layouts_slider = new Swiper('.layouts-slider', {
         wrapperClass: 'layouts-slider-wrapper',
         slideClass: 'layouts-slider-item',
@@ -89,9 +89,9 @@ document.addEventListener('DOMContentLoaded', function () {
 // Поэтажные планы
 document.addEventListener('DOMContentLoaded', function () {
 
-		const p_spaceVW = 1.8855;
+    const p_spaceVW = 1.8855;
     const p_spacePixels = window.innerWidth * (p_spaceVW / 100);
-    
+
     var plans_slider = new Swiper('.plans-slider', {
         wrapperClass: 'plans-slider-wrapper',
         slideClass: 'plans-slider-item',
@@ -115,7 +115,7 @@ document.addEventListener('DOMContentLoaded', function () {
             if (entry.isIntersecting) {
                 plans_slider.autoplay.start();
             } else {
-              	plans_slider.autoplay.stop();
+                plans_slider.autoplay.stop();
             }
         });
     }, {
@@ -132,9 +132,9 @@ document.addEventListener('DOMContentLoaded', function () {
 // Квартиры
 document.addEventListener('DOMContentLoaded', function () {
 
-		const f_spaceVW = 1.8855;
+    const f_spaceVW = 1.8855;
     const f_spacePixels = window.innerWidth * (f_spaceVW / 100);
-    
+
     var flats_slider = new Swiper('.flats-slider', {
         wrapperClass: 'flats-slider-wrapper',
         slideClass: 'flats-slider-item',
@@ -142,6 +142,14 @@ document.addEventListener('DOMContentLoaded', function () {
         slidesPerView: 3,
         spaceBetween: f_spacePixels,
         loop: false,
+        pagination: {
+            el: '#flats-pagination',
+            type: 'bullets',
+            clickable: true,
+            bulletClass: 'slider-dot',
+            bulletActiveClass: 'active',
+            dynamicBullets: true,
+        },
         speed: 600,
         autoplay: {
             delay: 3000,
@@ -158,7 +166,7 @@ document.addEventListener('DOMContentLoaded', function () {
             if (entry.isIntersecting) {
                 flats_slider.autoplay.start();
             } else {
-              	flats_slider.autoplay.stop();
+                flats_slider.autoplay.stop();
             }
         });
     }, {
@@ -175,9 +183,9 @@ document.addEventListener('DOMContentLoaded', function () {
 // Остальные кондо (смотрите также)
 document.addEventListener('DOMContentLoaded', function () {
 
-		const a_spaceVW = 1.8855;
+    const a_spaceVW = 1.8855;
     const a_spacePixels = window.innerWidth * (a_spaceVW / 100);
-    
+
     var also_slider = new Swiper('.also-slider', {
         wrapperClass: 'also-slider-wrapper',
         slideClass: 'also-slider-item',
@@ -201,7 +209,7 @@ document.addEventListener('DOMContentLoaded', function () {
             if (entry.isIntersecting) {
                 also_slider.autoplay.start();
             } else {
-              	also_slider.autoplay.stop();
+                also_slider.autoplay.stop();
             }
         });
     }, {
